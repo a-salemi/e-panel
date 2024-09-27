@@ -45,8 +45,7 @@
                         <a-progress type="dashboard" status="normal"
                           :stroke-color="status.cpu.color"
                           :percent="status.cpu.percent"></a-progress>
-                        <div><b>CPU:</b>  <a-tooltip>
-                          <a-icon type="area-chart"></a-icon> 
+                        <div><b>CPU</b>  <a-tooltip>
                           <template slot="title">
                             <!--<div><b>Logical Processors(vCPUs):</b> [[ (status.logicalPro) ]]</div>
                             <div><b>Speed:</b> [[ cpuSpeedFormat(status.cpuSpeedMhz) ]]</div>-->
@@ -57,6 +56,7 @@
                         <a-progress type="dashboard" status="normal"
                           :stroke-color="status.mem.color"
                           :percent="status.mem.percent"></a-progress>
+						  <div> <b>Memory</b> </div>
                         <!--<div>
                           <b>{{ i18n "pages.index.memory"}}:</b> [[ sizeFormat(status.mem.current) ]] / [[ sizeFormat(status.mem.total) ]]
                         </div>-->
@@ -70,13 +70,14 @@
                           :stroke-color="status.swap.color"
                           :percent="status.swap.percent"></a-progress>
                         <div>
-                          <b>Swap:</b> 
+                          <b>Swap</b> 
                         </div>
                       </a-col>
                       <a-col :span="12" style="text-align: center">
                         <a-progress type="dashboard" status="normal"
                           :stroke-color="status.disk.color"
                           :percent="status.disk.percent"></a-progress>
+						  <div> <b>Storage</b> </div>
                         <!--<div>
                           <b>{{ i18n "pages.index.hard"}}:</b> [[ sizeFormat(status.disk.current) ]] / [[ sizeFormat(status.disk.total) ]]
                         </div>-->
@@ -92,7 +93,7 @@
               <a-col :sm="24" :lg="12">
                 <a-card hoverable>
                   <b>E-Panel:</b>
-                  <a rel="noopener" href="https://t.me/SupportElectroNetwork" target="_blank"><a-tag color="green">v{{ .cur_ver }}</a-tag></a>
+                  <a rel="noopener" href="https://t.me/ElectroNetworkSupport" target="_blank"><a-tag color="green">v{{ .cur_ver }}</a-tag></a>
                   <a rel="noopener" href="https://t.me/ElectroNetwork" target="_blank"><a-tag color="green">@ElectroNetwork</a-tag></a>
                 </a-card>
               </a-col>
